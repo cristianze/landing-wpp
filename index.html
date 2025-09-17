@@ -59,6 +59,8 @@
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 18px;
       margin: 40px 0;
+      /* Center the entire grid horizontally and each item within its cell */
+      justify-content: center;
       justify-items: center;
     }
     footer { padding:34px 0; color:#6b7280; border-top:1px solid var(--line); margin-top:50px }
@@ -115,7 +117,8 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
-      /* Center cards on very wide screens */
+      /* Center the grid and its cards on wide screens */
+      justify-content: center;
       justify-items: center;
     }
     .tier-card h3 { margin-top: 0; margin-bottom: 8px; font-weight: 800; }
@@ -128,6 +131,8 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
+      /* Center the grid and its items horizontally */
+      justify-content: center;
       justify-items: center;
     }
     .how-step {
