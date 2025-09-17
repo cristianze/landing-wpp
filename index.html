@@ -51,6 +51,61 @@
     .card { background:#fff; border:1px solid var(--line); border-radius:20px; padding:20px; box-shadow:var(--shadow) }
     .ps { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:40px 0 }
     footer { padding:34px 0; color:#6b7280; border-top:1px solid var(--line); margin-top:50px }
+
+    /* Chat conversation animation */
+    .chat {
+      position: relative;
+      width: 100%;
+      height: 420px;
+      overflow: hidden;
+      background: linear-gradient(135deg, #f0fdf4, #ecfeff);
+      border-radius: 28px;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+    }
+    .chat .msg {
+      max-width: 80%;
+      padding: 12px 16px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      opacity: 0;
+      animation: slideIn 1s forwards;
+      font-size: 0.9rem;
+      line-height: 1.3;
+    }
+    .chat .msg.user {
+      align-self: flex-end;
+      background: #dcf8c6;
+      color: #042c1b;
+    }
+    .chat .msg.bot {
+      align-self: flex-start;
+      background: #ffffff;
+      color: #0b1220;
+      border: 1px solid var(--line);
+    }
+    .chat .msg:nth-child(1) { animation-delay: 0s; }
+    .chat .msg:nth-child(2) { animation-delay: 0.6s; }
+    .chat .msg:nth-child(3) { animation-delay: 1.2s; }
+    .chat .msg:nth-child(4) { animation-delay: 1.8s; }
+    .chat .msg:nth-child(5) { animation-delay: 2.4s; }
+    .chat .msg:nth-child(6) { animation-delay: 3.0s; }
+    @keyframes slideIn {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Tiers grid */
+    .tier-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .tier-card h3 { margin-top: 0; margin-bottom: 8px; font-weight: 800; }
   </style>
 </head>
 <body>
@@ -87,9 +142,14 @@
       </div>
 
       <div class="hero-visual">
-        <lottie-player src="assets/chat.json" background="transparent" speed="1"
-                       style="width:100%;height:420px" loop autoplay
-                       aria-label="Animación de conversación"></lottie-player>
+        <div class="chat">
+          <div class="msg user">Hola, ¿qué opciones tengo?</div>
+          <div class="msg bot">¡Hola! Selecciona una opción:</div>
+          <div class="msg bot">1. Ver productos y precios</div>
+          <div class="msg bot">2. Agendar cita</div>
+          <div class="msg bot">3. Hablar con un asesor</div>
+          <div class="msg user">1</div>
+        </div>
       </div>
 
     </div>
@@ -100,6 +160,26 @@
       <div class="card"><h3>El problema</h3><p>La gente ya compra y resuelve por chat. Si tardas, se van con otra opción. Y cada vez esperan ver opciones y precios sin salir de WhatsApp.</p></div>
       <div class="card"><h3>La solución</h3><p>Un chat que responde al instante, guía con botones y listas, muestra productos cuando hace falta y, si el cliente lo pide, lo atiende un asesor en el mismo chat con todo el historial.</p></div>
     </div>
+  </section>
+
+  <!-- Tiers section -->
+  <section id="tiers" class="container" style="margin:40px 0">
+    <h2 style="margin-bottom:24px">Nuestros planes</h2>
+    <div class="tier-grid">
+      <div class="card tier-card">
+        <h3>Respuesta al Instante</h3>
+        <p>Resuelve lo típico (horarios, precios base, cómo comprar) y captura datos sin fricción para que no se te escape ningún lead.</p>
+      </div>
+      <div class="card tier-card">
+        <h3>Datos &amp; Agenda sin Fricción</h3>
+        <p>Formularios claros con validación, agenda citas sencillas y aplica reglas tipo “si quiere X, ofrécele Y”, todo dentro del chat.</p>
+      </div>
+      <div class="card tier-card">
+        <h3>Catálogo Conversado</h3>
+        <p>Muestra productos, ficha y precio dentro de WhatsApp; el cliente elige y confirma sin salir del chat. Funciona con tu Excel/Google Sheets/API o con catálogo nativo.</p>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:18px; color:var(--muted)"><strong>Add-on:</strong> Hablar con un asesor en el mismo chat cuando el cliente lo pida.</p>
   </section>
 
   <section id="contacto" class="container" style="margin:40px 0">
