@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Convierte el chat en tu mejor vendedor | WhatsApp</title>
+  <meta name="description" content="Responde al instante, agenda, muestra catálogo y pasa a un asesor humano en el mismo chat cuando haga falta." />
+  <meta property="og:title" content="Vende más por WhatsApp" />
+  <meta property="og:description" content="Responde al instante, guía al cliente y vende sin fricción en WhatsApp." />
+  <meta property="og:image" content="assets/social-og.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    :root {
+      --bg:#ffffff;
+      --text:#0b1220;
+      --muted:#5b6570;
+      --line:#e5e7eb;
+      --brand:#25D366;
+      --brand-600:#1eb356;
+      --container:1120px;
+      --shadow:0 12px 36px rgba(2,6,23,.06);
+    }
+    * { box-sizing: border-box }
+    body { margin:0; font-family: Inter, system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial;color:var(--text); background:var(--bg) }
+    .container { max-width: var(--container); margin: 0 auto; padding: 0 20px }
+    .nav { display:flex; align-items:center; justify-content:space-between; padding:12px 0 }
+    .brand { display:flex; align-items:center; gap:.6rem; font-weight:800 }
+    .brand .dot { width:12px; height:12px; background:var(--brand); border-radius:50%; box-shadow:0 0 0 8px rgba(37,211,102,.18) }
+
+    .btn { display:inline-flex; align-items:center; gap:.6rem; border:none; cursor:pointer; font-weight:800; border-radius:999px; padding:14px 18px; transition:.25s ease }
+    .btn-primary { background:var(--brand); color:#03160b; box-shadow:0 10px 22px rgba(37,211,102,.25) }
+    .btn-primary:hover { background:var(--brand-600); transform:translateY(-1px) }
+    .btn-outline { background:transparent; border:1px solid var(--line) }
+    .btn .ico { vertical-align:-2px }
+
+    .hero { padding:72px 0 30px }
+    .grid { display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:center }
+    h1 { font-weight:900; font-size:clamp(2.2rem,6vw,3.4rem); line-height:1.05; margin:12px 0 }
+    p { color:var(--muted) }
+    .hero-visual { min-height:420px; border-radius:28px; border:1px solid var(--line); background:linear-gradient(135deg,#f0fdf4,#ecfeff); box-shadow:var(--shadow); overflow:hidden }
+    .hooks { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px }
+    .hook { background:#fff; border:1px solid var(--line); border-radius:20px; padding:14px 16px; font-weight:800 }
+
+    @media (max-width:980px) {
+      .grid { grid-template-columns:1fr }
+    }
+
+    .card { background:#fff; border:1px solid var(--line); border-radius:20px; padding:20px; box-shadow:var(--shadow) }
+    .ps { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:40px 0 }
+    footer { padding:34px 0; color:#6b7280; border-top:1px solid var(--line); margin-top:50px }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span><span>Tu Bot en WhatsApp</span></div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container grid">
+      <div>
+        <span style="display:inline-flex; align-items:center; gap:.5rem; padding:6px 10px; border:1px solid var(--line); border-radius:999px; font-weight:800; color:#065f46">
+          WhatsApp que sí vende
+        </span>
+        <h1>Convierte el chat en tu mejor vendedor.</h1>
+        <p>Automatiza preguntas, agenda citas y muestra tu catálogo. Y cuando haga falta, un asesor entra al <strong>mismo chat</strong> con todo el contexto.</p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:14px;">
+          <a class="btn btn-primary" href="https://wa.me/573043434500" target="_blank" rel="noopener"
+             aria-label="Escríbeme por WhatsApp al 304 343 4500">
+            <svg class="ico" width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0 3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+            </svg>
+            <span>Escríbeme por WhatsApp</span>
+          </a>
+          <a class="btn btn-outline" href="#tiers">Ver tiers</a>
+        </div>
+        <div class="hooks">
+          <div class="hook">Tus clientes quieren solución YA por WhatsApp.</div>
+          <div class="hook">Responder lento = perder ventas.</div>
+          <div class="hook">Convierte el chat en tu mejor vendedor.</div>
+          <div class="hook">Atiende 24/7 sin perder el toque humano.</div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <lottie-player src="assets/chat.json" background="transparent" speed="1"
+                       style="width:100%;height:420px" loop autoplay
+                       aria-label="Animación de conversación"></lottie-player>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="ps">
+      <div class="card"><h3>El problema</h3><p>La gente ya compra y resuelve por chat. Si tardas, se van con otra opción. Y cada vez esperan ver opciones y precios sin salir de WhatsApp.</p></div>
+      <div class="card"><h3>La solución</h3><p>Un chat que responde al instante, guía con botones y listas, muestra productos cuando hace falta y, si el cliente lo pide, lo atiende un asesor en el mismo chat con todo el historial.</p></div>
+    </div>
+  </section>
+
+  <section id="contacto" class="container" style="margin:40px 0">
+    <div class="card">
+      <h2 style="margin-top:0">Contacto</h2>
+      <p style="color:var(--muted)">Cuéntame de tu negocio y te recomiendo el tier ideal.</p>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="btn btn-primary" href="https://wa.me/573043434500" target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp al 304 343 4500">
+          <svg class="ico" width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0 3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+          <span>Escríbeme por WhatsApp</span>
+        </a>
+        <a class="btn btn-outline" href="mailto:cristian.zapata.escobar@gmail.com">cristian.zapata.escobar@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+      <div>© <span id="y"></span> Tu Bot en WhatsApp</div>
+      <div style="font-size:.95rem">Hecho para PYMEs que quieren vender más.</div>
+    </div>
+  </footer>
+
+  <script> document.getElementById('y').textContent=new Date().getFullYear(); </script>
+</body>
+</html>
