@@ -48,8 +48,19 @@
       .grid { grid-template-columns:1fr }
     }
 
+    /* Ensure equal columns on larger screens for better centering */
+    @media (min-width:1200px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+
     .card { background:#fff; border:1px solid var(--line); border-radius:20px; padding:20px; box-shadow:var(--shadow) }
-    .ps { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:40px 0 }
+    .ps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin: 40px 0;
+      justify-items: center;
+    }
     footer { padding:34px 0; color:#6b7280; border-top:1px solid var(--line); margin-top:50px }
 
     /* Chat conversation animation */
@@ -104,6 +115,8 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
+      /* Center cards on very wide screens */
+      justify-items: center;
     }
     .tier-card h3 { margin-top: 0; margin-bottom: 8px; font-weight: 800; }
 
@@ -115,6 +128,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
+      justify-items: center;
     }
     .how-step {
       background:#fff;
